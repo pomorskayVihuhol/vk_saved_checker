@@ -235,7 +235,7 @@ if __name__=='__main__':
     get_ids(is_newby)
     ans = ''
     while (ans!='EXIT'):
-        print('Do you want to UPDATE last photo or CHECK how many apples there are in the basket? \nPrint EXIT to exit\n' + '*'*30)
+        print('Do you want to UPDATE last photo or CHECK how many photos were added since last UPDATE? \nPrint EXIT to exit\n' + '*'*30)
         ans = input()
         if ans == 'UPDATE':
             get_last_photo(is_newby)
