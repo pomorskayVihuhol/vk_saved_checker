@@ -13,6 +13,9 @@ import pickle
 import requests
 
 def get_starting_data(is_newby):
+    
+    #получение информации о пользователях, за которыми следить + ввод логина и пароля
+    
     print('Hi,sir! How many users do you want to follow? 1,2,3...?')
     number_to_follow = int(input())
     print('That\'s nice. Enter their usernames, please: (f.e. matmuh, jonny etc)')
@@ -45,6 +48,9 @@ def get_starting_data(is_newby):
 path = "B:\\Parser\\Selenium_exercise\\chrome_driver\\chromedriver.exe"
 
 def get_last_photo(ans):
+    
+    #получение id последней сохранёнки
+    
     user_agent = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.107 Safari/537.36'
     options = webdriver.ChromeOptions()
     options.add_argument(f"user-agent={user_agent}")
@@ -101,6 +107,9 @@ def get_last_photo(ans):
 
 
 def check_new_photos(ans):
+    
+    #как много сохранёнок добавилось у пользователя с этим id, вывод словарь {id : колво_сохранёнок}
+    
     user_agent = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.107 Safari/537.36'
     options = webdriver.ChromeOptions()
     options.add_argument(f"user-agent={user_agent}")
@@ -169,6 +178,7 @@ def check_new_photos(ans):
 
 def get_ids(ans):
 
+    #превращает буквенные id-юзернеймы в цифровые, напрмиер matmuh -> 181112747
 
     user_agent = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.107 Safari/537.36'
     options = webdriver.ChromeOptions()
