@@ -12,6 +12,10 @@ from bs4 import BeautifulSoup as BS
 import pickle
 import requests
 
+
+#в проекте используется веб-драйвер. path - путь к нему
+path = "B:\\Parser\\Selenium_exercise\\chrome_driver\\chromedriver.exe"
+
 def get_starting_data(is_newby):
     
     #получение информации о пользователях, за которыми следить + ввод логина и пароля
@@ -45,7 +49,6 @@ def get_starting_data(is_newby):
     #путь до webdriver
 
 
-path = "B:\\Parser\\Selenium_exercise\\chrome_driver\\chromedriver.exe"
 
 def get_last_photo(ans):
     
