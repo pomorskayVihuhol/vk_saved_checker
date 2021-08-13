@@ -15,7 +15,7 @@ import requests
 def get_starting_data(is_newby):
     print('Hi,sir! How many users do you want to follow? 1,2,3...?')
     number_to_follow = int(input())
-    print('That\'s nice. Enter their link profiles, please:')
+    print('That\'s nice. Enter their usernames, please: (f.e. matmuh, jonny etc)')
 
     urls = []
     for i in range(number_to_follow):
